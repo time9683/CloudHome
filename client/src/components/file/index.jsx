@@ -71,7 +71,7 @@ setOpen(true)
 
 
 
-
+// console.log('video')
 
 
 
@@ -79,6 +79,39 @@ setOpen(true)
 
 }
 
+
+const del = (e) =>{
+e.preventDefault()
+e.stopPropagation()
+if(confirm("estas seguro de querer eliminar este archivo"))
+{
+
+fetch(`http://${import.meta.env.VITE_API_URL}:5000/rm/${url}${name}`,{method:"DELETE"}).then((r)=>{
+
+r.json().then((data)=>{
+
+if(data.success)
+{
+
+window.location.href = window.location.href
+
+}
+
+})
+
+
+})
+
+
+
+
+}else{
+
+  
+}
+
+
+}
 
 
 
@@ -92,6 +125,7 @@ return(
 {isOpen ? <MediaPlayer   open={setOpen} src={`${host}${url}${name}`} /> : ``}
 
 <a  download={/\.mp4$/.test(name) ? false : true }   href={`${host}${url}${name}`}   onClick={OpenVideo} className={style.container}>
+<p onClick={(e)=>{del(e)}}  className={style.delete}>x</p>
 
 <img  className={style.img}  src={source}/>
 <p className={style.text}>{name}</p>
