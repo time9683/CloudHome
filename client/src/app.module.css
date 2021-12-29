@@ -6,12 +6,36 @@ place-content:start;
 
 padding: 20px;
 min-width: 350px;
-max-width: 61vw;
-height: 100vh;
+width: 100vw;
+height: 100%;
 background-color: rgb(38, 38, 39);
 
 
 }
+
+@media  screen and (min-width:500px){
+
+
+    .app{
+width: 61vw;
+height: 100vh;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container_data{
 display: flex;
@@ -26,7 +50,14 @@ background-color: rgb(16, 12, 37);
 color: white;
 font: 16px;
 border-radius: 10px;
+width: 90vw;
 }
+
+
+
+
+
+
 
 .poput{
 
@@ -43,3 +74,89 @@ cursor: pointer;
 
 
 }
+
+
+
+.containerSpiner{
+width:90vw;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+
+
+@media screen and (min-width:500px){
+    
+.containerSpiner{
+    width: 58vw;
+
+
+
+}
+
+
+.top_button{
+
+
+width: 58vw;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spinner{
+
+border-radius: 50%;
+
+border:4px solid blue;
+border-left: 4px solid transparent;
+width: 200px;
+height: 200px;
+animation: spin 2s  linear infinite;
+
+}
+
+
+@keyframes  spin {
+0%{
+
+transform: rotate(0deg);
+    
+
+
+}
+
+
+100%{
+
+transform: rotate(360deg);
+
+
+}
+
+
+    
+}
+

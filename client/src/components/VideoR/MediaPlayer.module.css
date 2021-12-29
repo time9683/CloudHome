@@ -1,0 +1,116 @@
+.container{
+
+position: absolute;
+height: 400px;
+width: 100vw;
+left: 0;
+background-color: black;
+border-radius: 5px;
+overflow: hidden;
+}
+
+
+
+@media screen and (min-width:600px) {
+    
+.container{
+
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+
+
+}
+
+
+
+}
+
+
+
+
+.Video{
+
+
+width: 100%;
+height: 100%;
+
+}
+
+.close{
+color: white;
+position:absolute;
+font-size: 21px;
+z-index:1;
+color: gray;
+right: 10px;
+top: -20px;
+}
+
+.close:hover{
+cursor: pointer;
+
+}
+
+
+.Playbutton{
+
+width: 50px;
+height: 50px;
+position: absolute;
+bottom: 0px;
+color: white;
+}
+
+.Playbutton:hover{
+cursor: pointer;
+
+}
+
+.fullbar{
+width: 100%;
+bottom: 0px;
+height: 9px;
+position: absolute;
+background-color: gray;
+z-index: 4;
+}
+
+.currentbar{
+background-color: white;
+position:absolute;
+bottom: 0px;
+height: 9px;
+}
+
+.time{
+
+
+    color: white;
+    position: absolute;
+bottom: 2px;
+left: 50px;
+
+}
+
+.counterbar{
+text-align: center;
+color: white;
+position: absolute;
+bottom: 14px;
+z-index: 2;
+background-color: rgb(87, 86, 86);
+width:60px;
+margin-left:-30px;
+border-radius:5px;
+/* padding: 5px; */
+}
+
+.download{
+color: white;
+font-size: 16px;
+position: absolute;
+bottom: 20px;
+right: 10px;
+
+}

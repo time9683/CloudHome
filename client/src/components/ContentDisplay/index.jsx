@@ -76,22 +76,122 @@ setLoading(false);
            { OpenP ? <Poput  poput={Setpoput} /> : ''}
 
 
+
+
+  
+            
+         
+         
+         
+         
+
          <Link className={style.top_button} to={Top ? `/${Top}` : '/' }>to top</Link>
         <p className={style.poput}   onClick={()=>Setpoput(true)} >upload file</p>
        <div className={style.container_data}>
+  
 
-         {loading ? <p>loading</p>  : data.content.files.map((element,index) => {
-           return <File name={element} key={index} />
-         })
-        }
-        {loading ? <p>loading</p>  : data.content.directorys.map((element,index) => {
-           return <Directorys name={element} key={index} />
-         })
-        }
-         
+
+       {  loading ?   <Loader/> :    
+    
+    <MapContent data={data} />
+      
+      
+      
+     
+     }
+  
 
        </div>
       
     </div>
   )
+}
+
+
+const MapContent = ({data}) =>{
+
+
+
+
+return (
+
+<>
+{
+data?.content?.files.map((element,index) => {
+       return <File name={element} key={index} />
+       })
+      }
+      {
+
+data?.content?.directorys.map((element,index) => {
+        return <Directorys name={element} key={index} />
+       })
+      }
+
+
+
+
+
+</>
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+}
+
+
+
+const Loader = () =>{
+
+
+
+
+return (
+
+
+<div className={style.containerSpiner} >
+<div className={style.spinner}>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+
+
+
+
 }
