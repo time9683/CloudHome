@@ -24,6 +24,7 @@
   "homepage": "https://github.com/time9683/CloudHome#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "express-fileupload": "^1.2.1",
     "mime-types": "^2.1.34",

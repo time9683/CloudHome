@@ -1,0 +1,20 @@
+.app{
+display: grid;
+
+
+place-content:start;
+
+padding: 20px;
+min-width: 350px;
+max-width: 61vw;
+height: 100vh;
+background-color: rgb(38, 38, 39);
+
+
+}
+
+.container_data{
+display: flex;
+flex-wrap: wrap;
+
+}

@@ -1,0 +1,30 @@
+.container{
+width: 150px;
+height: 150px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+
+
+.container:hover{
+
+    background-color: rgb(50, 50, 51);
+filter: brightness(1.2);
+
+}
+
+.img{
+height: 90px;
+width: 120px;
+}
+
+.text{
+margin: 6px;
+color:whitesmoke
+}

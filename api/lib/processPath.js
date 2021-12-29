@@ -1,5 +1,6 @@
 const path = require("path")
-const Disk = '/home/luis/shareCloud'
+require('dotenv').config()
+const Disk =  process.env.CLOUD || path.join(__dirname,'disk') ;
 
 
 
