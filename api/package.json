@@ -1,0 +1,32 @@
+{
+  "name": "cloudapi",
+  "version": "1.0.0",
+  "description": "the api for cloud home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/time9683/CloudHome.git"
+  },
+  "keywords": [
+    "api",
+    "FronEnd",
+    "cloud",
+    "storage"
+  ],
+  "author": "Time",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/time9683/CloudHome/issues"
+  },
+  "homepage": "https://github.com/time9683/CloudHome#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "mime-types": "^2.1.34",
+    "nodemon": "^2.0.15"
+  }
+}
