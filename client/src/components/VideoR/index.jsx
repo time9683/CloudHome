@@ -166,7 +166,7 @@ return(
 
 <p  onClick={()=>{open(false)}} className={style.close} >x</p>
 
-<video  onKeyDown={(e)=>{console.log(e)}} onClick={controlPlay}   onEnded={()=>{setPlay(false)}} onDurationChange={(e)=>{setDuration(e.target.duration)}} onTimeUpdate={(e)=>setTime(e.target.currentTime)} ref={ref} className={style.Video} src={src}></video>
+<video onClick={controlPlay}   onEnded={()=>{setPlay(false)}} onDurationChange={(e)=>{setDuration(e.target.duration)}} onTimeUpdate={(e)=>setTime(e.target.currentTime)} ref={ref} className={style.Video} src={src}></video>
 
 
 <p className={style.time}>{CalculateTime(time) + '/' + CalculateTime(duration)}</p>
