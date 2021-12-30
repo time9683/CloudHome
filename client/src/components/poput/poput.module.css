@@ -1,0 +1,70 @@
+.container{
+
+border-radius: 10px;
+padding: 15px;
+background-color: rgb(24, 27, 73);
+max-width: 550px;
+height: 250px;
+position:absolute;
+z-index: 1;
+top: 10vh;
+left: 40vw;
+
+}
+
+.fileInput{
+
+display: none;
+
+}
+
+
+.title_text{
+
+
+font-size: 21px;
+color: white;
+text-align: center;
+
+}
+
+
+.fileButton{
+
+
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border:none
+
+}
+
+.fileButton:hover{
+
+
+    cursor: pointer;
+    filter: brightness(1.2);
+
+}
+
+
+.btn{
+
+background-color: rgb(35, 79, 160);
+
+border:none;
+padding: 10px;
+margin: 10px;
+color: white;
+border-radius: 10px;
+}
+
+.btn:hover{
+
+filter: brightness(1.2);
+cursor: pointer;
+
+
+}

@@ -47,14 +47,20 @@ mv(file,Ruta.AbsolutePath)
 
 }catch(err){
 console.log(err)
-
+res.status(400).json({
+    success: false,
+    message: 'the file generate one error'
+})
 
 }
 
 
 
 
-res.end("completado papu")
+res.status(200).json({
+    success: true,
+    message: 'the file is upload'
+})
 
 })
 

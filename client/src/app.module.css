@@ -18,3 +18,28 @@ display: flex;
 flex-wrap: wrap;
 
 }
+
+
+.top_button{
+padding: 10px;
+background-color: rgb(16, 12, 37);
+color: white;
+font: 16px;
+border-radius: 10px;
+}
+
+.poput{
+
+color: white;
+background-color: rgb(14, 94, 185);
+font-size: 16px;
+padding: 10px;
+border-radius: 10px;
+}
+
+.poput:hover{
+
+cursor: pointer;
+
+
+}

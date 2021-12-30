@@ -1,11 +1,27 @@
 import ContentDisplay from "@/components/ContentDisplay/index"
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+
+
+
+
 
 function App() {
 
   return (
-     <>
-       <ContentDisplay/>
-    </>
+     <BrowserRouter>
+    
+
+      <Routes>
+      
+      <Route  path="/:ruta"   element={<ContentDisplay/>} />
+      <Route path="/"   element={<ContentDisplay/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

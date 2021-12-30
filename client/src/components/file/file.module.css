@@ -26,5 +26,7 @@ width: 120px;
 
 .text{
 margin: 6px;
-color:whitesmoke
+color:whitesmoke;
+word-break: break-all;
+text-align: center;
 }

@@ -1,7 +1,8 @@
 const proPath = require("../lib/processPath");
 const fs = require("fs/promises")
 const Router = require("express").Router();
-const   mime = require("mime-types")
+const   mime = require("mime-types");
+
 
 
 
@@ -16,9 +17,8 @@ let rutas = proPath(req.params.path)
 try{
 
 
-
+console.log(rutas.AbsolutePath)
 let mimetype = mime.lookup(rutas.AbsolutePath)
-console.log(mimetype)
 res.setHeader('Content-Disposition', `attachment; filename=${rutas.AbsolutePath}`);
 res.setHeader('Content-Type', mimetype);
 res.download(rutas.AbsolutePath)
