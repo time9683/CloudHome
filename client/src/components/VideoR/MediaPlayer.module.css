@@ -6,6 +6,7 @@ width: 100vw;
 left: 0;
 background-color: black;
 border-radius: 5px;
+z-index: 1;
 overflow: hidden;
 }
 
