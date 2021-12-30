@@ -11,7 +11,7 @@ const  AbsPath = proPath(req.params.path).AbsolutePath
 
 
 try{
-await fs.rmdir(AbsPath)
+await fs.rmdir(AbsPath,{recursive:true})
 res.end(JSON.stringify({success:true}))
 }
 catch(e){
