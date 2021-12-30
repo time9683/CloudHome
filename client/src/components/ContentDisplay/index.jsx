@@ -10,7 +10,8 @@ export default function ContentDisplay() {
 const [loading,setLoading] = useState(true)
 const [data,setData] = useState({})
 const [Top,setTop] = useState('/')
-const [OpenP,Setpoput] = useState(false)
+const [poput,Setpoput] = useState({open:false,option:'',title:'',type:''})
+
 
 
 
@@ -68,12 +69,12 @@ setLoading(false);
 },[ruta])
 
 
-
+console.log(poput)
 
   return (
     <div className={style.app}>
         
-           { OpenP ? <Poput  poput={Setpoput} /> : ''}
+           { poput.open ? <Poput  poput={Setpoput}  title={poput.title}  type={poput.type}  option={poput.option}    /> : ''}
 
 
 
@@ -86,7 +87,7 @@ setLoading(false);
          
 
          <Link className={style.top_button} to={Top ? `/${Top}` : '/' }>to top</Link>
-        <p className={style.poput}   onClick={()=>Setpoput(true)} >upload file</p>
+        <p className={style.poput}   onClick={()=>Setpoput({open:true,title:"upload File",option:"upload",type:"file"})} >upload file</p>
        <div className={style.container_data}>
   
 
@@ -99,7 +100,7 @@ setLoading(false);
       
      
      }
-  
+  <div className={style.CreateDisplay} onClick={()=>Setpoput({open:true,title:"create a dir",option:"dir",type:"dir"})}>Create dir +</div>
 
        </div>
       
@@ -127,6 +128,8 @@ data?.content?.directorys.map((element,index) => {
         return <Directorys name={element} key={index} />
        })
       }
+
+
 
 
 

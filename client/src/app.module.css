@@ -160,3 +160,25 @@ transform: rotate(360deg);
     
 }
 
+
+
+
+.CreateDisplay{
+width: 150px;
+height: 150px;
+color: white;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.CreateDisplay:hover{
+    background-color: rgb(50, 50, 51);
+    filter: brightness(1.2);
+    cursor: pointer;
+
+
+}
