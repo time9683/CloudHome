@@ -62,3 +62,34 @@ change  VITE_API_URL=192.168.156.150 to the correct ip the your machine
 **example**:
 
 VITE_API_URL=192.168.1.10
+
+## start the server and client
+
+### api
+
+```bash
+cd api
+npm run start
+```
+
+the server is running in the port 5000
+
+### client
+
+in mode developer
+
+```bash
+cd client
+npm run dev
+```
+
+#### to start the client in the lan network
+
+you have to push your direction ip and you wish port
+**ip** = your ip
+**port** = your port
+
+```bash
+cd client
+npx vite --host ip  --port  port
+```
