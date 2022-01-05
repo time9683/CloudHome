@@ -1,19 +1,16 @@
 
-const host = 'http://192.168.1.106:5000/donw/'
+const host =  `http://${import.meta.env.VITE_API_URL}:5000/donw/`;
 import Fileimg  from './file.svg'
 import zipImg from "./zip.png"
 import style from './file.module.css'
 import { useParams } from 'react-router-dom'
 
 
-
-
-
 export default File = ({name}) =>{
 
 const {ruta} = useParams()
 
-
+console.log( import.meta.env.VITE_API_URL)
 
  let url = ruta ?  `${ruta}--` : ''
 

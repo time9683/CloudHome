@@ -38,7 +38,7 @@ useEffect(()=>{
 
 let url = ruta || ''
 
-fetch(`http://192.168.1.106:5000/content/${url}`).then((res)=>{
+fetch(`http://${import.meta.env.VITE_API_URL}:5000/content/${url}`).then((res)=>{
 
 
 

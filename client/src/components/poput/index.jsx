@@ -35,7 +35,7 @@ body : formData
 }
     setLonding(true)
 
-    fetch(`http://192.168.1.106:5000/upload/${url}`,Config).then((r)=>{
+    fetch(`http://${import.meta.env.VITE_API_URL}:5000/upload/${url}`,Config).then((r)=>{
 
 
    r.json().then((data)=>{
