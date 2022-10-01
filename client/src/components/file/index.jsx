@@ -33,7 +33,7 @@ let source;
 
 if(/\.jpg$/.test(name) || /\.png$/.test(name)){
 
-  source =   `${host}${name}`
+  source =   `${host}${url}${name}`
 
 }else if(  /\.zip$/.test(name) ){
 
